@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReMemorize - Dashboard</title>
+    <link rel="stylesheet" href="./css/dashboard.css">
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="dashboard-container">
+        <!-- Header -->
+        <header class="header">
+            <h1>Welcome to ReMemorize</h1>
+            <button onclick="logout()" class="logout-btn">Log Out</button>
+        </header>
+
+        <!-- User Greeting -->
+        <section class="welcome-section">
+            <h2 id="user-name">Hello, User!</h2>
+            <p>What would you like to do today?</p>
+        </section>
+
+        <!-- Dashboard Options -->
+        <section class="options-section">
+            <div class="option-card">
+                <h3>Create Notes</h3>
+                <p>Start adding new notes to organize your thoughts.</p>
+                <button onclick="goToNotes()">Go to Notes</button>
+            </div>
+            <div class="option-card">
+                <h3>Draw A Reminder</h3>
+                <p>Tired of Typing? Draw it Now!</p>
+                <button onclick="goToProfile()">Go to Drawboard</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="./js/dashboard.js"></script>
+</body>
+</html>

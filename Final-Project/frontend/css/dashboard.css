@@ -1,0 +1,112 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f7fc;
+    color: #333;
+}
+
+/* Container */
+.dashboard-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3b82f6; /* Theme color */
+    color: #ffffff;
+    padding: 1rem 2rem;
+}
+
+.header h1 {
+    font-size: 1.8rem;
+}
+
+.logout-btn {
+    background-color: #ef4444;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.logout-btn:hover {
+    background-color: #dc2626;
+}
+
+/* Welcome Section */
+.welcome-section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.welcome-section h2 {
+    font-size: 2rem;
+    color: #3b82f6;
+    margin-bottom: 0.5rem;
+}
+
+.welcome-section p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Options Section */
+.options-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.option-card {
+    background-color: #f9fafb;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    width: 300px;
+    padding: 1.5rem;
+    text-align: center;
+    margin: 1rem;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.option-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.option-card p {
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.option-card button {
+    background-color: #3b82f6;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.option-card button:hover {
+    background-color: #2563eb;
+}

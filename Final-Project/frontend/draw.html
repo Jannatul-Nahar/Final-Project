@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReMemorize - Draw</title>
+    <link rel="stylesheet" href="./css/note.css">
+    <link rel="stylesheet" href="./css/drawing.css">
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="drawing-container">
+        <!-- Header -->
+        <header class="header">
+            <a href="dashboard.html" class="home-link">
+                <h1>Your Drawings</h1>
+            </a>
+            <button onclick="logout()" class="logout-btn">Log Out</button>
+        </header>
+
+        <!-- Canvas Section -->
+        <section class="canvas-section">
+            <h2>Draw Something!</h2>
+            <div class="canvas-wrapper">
+                <canvas id="drawingCanvas" width="800" height="500"></canvas>
+            </div>
+
+            <!-- Controls -->
+            <div class="controls">
+                <input type="color" id="colorPicker" value="#000000">
+                <button onclick="clearCanvas()">Clear Canvas</button>
+                <button onclick="saveDrawing()">Save Drawing</button>
+                <button onclick="fetchDrawings()">View Saved Drawings</button>
+            </div>
+        </section>
+
+        <!-- Saved Images -->
+        <section class="saved-drawings">
+            <h2>Your Saved Drawings:</h2>
+            <div id="saved-images" class="drawings-container">
+                <!-- Saved drawings will be displayed dynamically -->
+            </div>
+        </section>
+    </div>
+
+    <script src="./js/drawing.js"></script>
+</body>
+</html>

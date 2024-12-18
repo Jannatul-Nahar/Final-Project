@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReMemorize - Notes</title>
+    <link rel="stylesheet" href="./css/note.css">
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="notes-container">
+        <!-- Header -->
+        <header class="header">
+            <a href="dashboard.html" class="home-link">
+                <h1>Your Notes</h1>
+            </a>
+            <button onclick="logout()" class="logout-btn">Log Out</button>
+        </header>
+
+        <!-- Notes Section -->
+        <section class="notes-section">
+            <div class="add-note">
+                <textarea id="note-input" placeholder="Write your note here..."></textarea>
+                <button onclick="addNote()">Add Note</button>
+            </div>
+
+            <h2>Your Saved Notes:</h2>
+            <div id="notes-list" class="notes-list">
+                <!-- Notes will be displayed here dynamically -->
+            </div>
+        </section>
+    </div>
+
+    <script src="./js/note.js"></script>
+</body>
+</html>

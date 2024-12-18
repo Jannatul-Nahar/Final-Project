@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReMemorize - Login & Sign Up</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <h1 class="title">ReMemorize</h1>
+
+        <!-- Form Container -->
+        <div class="form-container">
+            <!-- Navigation Buttons -->
+            <div class="form-toggle">
+                <button id="login-btn" class="active" onclick="showLogin()">Log In</button>
+                <button id="signup-btn" onclick="showSignup()">Sign Up</button>
+            </div>
+
+            <!-- Login Form -->
+            <form id="login-form" class="form active" onsubmit="event.preventDefault(); login();">
+                <h2>Log In</h2>
+                <input id="login-email" type="email" placeholder="Email" required>
+                <input id="login-password" type="password" placeholder="Password" required>
+                <button type="submit" class="submit-btn">Log In</button>
+            </form>
+
+            <!-- Signup Form -->
+            <form id="signup-form" class="form" onsubmit="event.preventDefault(); register();">
+                <h2>Sign Up</h2>
+                <input id="reg-name" type="text" placeholder="Full Name" required>
+                <input id="reg-email" type="email" placeholder="Email" required>
+                <input id="reg-password" type="password" placeholder="Password" required>
+                <input type="password" placeholder="Confirm Password" required>
+                <button type="submit" class="submit-btn">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
